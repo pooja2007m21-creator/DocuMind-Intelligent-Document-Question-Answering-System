@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Workspace · DocuMind</title><link rel="stylesheet" href="/css/style.css"><script src="/js/main.js"></script></head><body><div id="nav"></div><main class="wrap">
+<section><h1>Workspace</h1><div class="grid g2" style="grid-template-columns:minmax(0,5fr) minmax(0,7fr)">
+<div><div class="card"><div class="tabs" role="group" aria-label="Add a document"><button class="btn" data-tab="file" aria-pressed="true">Upload file</button><button class="btn" data-tab="text" aria-pressed="false">Paste text</button></div>
+<div id="t-file"><label for="file">PDF, DOCX or TXT (max 5 MB)</label><input id="file" type="file" accept=".txt,.pdf,.docx"></div>
+<div id="t-text" hidden><label for="pname">Document name</label><input id="pname" maxlength="150"><label for="ptext" style="margin-top:10px">Text</label><textarea id="ptext" style="min-height:160px" placeholder="Paste at least 30 words."></textarea><button class="btn primary" id="addtext" style="margin-top:10px">Add document</button></div>
+<div id="msg" class="msg" role="status"></div></div>
+<h3 style="margin-top:20px">Your documents</h3><div id="docs"></div></div>
+<div><label for="q">Ask a question about the selected document</label><div class="row" style="flex-wrap:nowrap"><input id="q" maxlength="500" placeholder="e.g. What are the main causes of the problem?"><button class="btn primary" id="ask" disabled>Ask</button></div>
+<div class="bar" id="bar" role="progressbar" aria-label="Searching"><i></i></div><div id="res" aria-live="polite" style="margin-top:16px"></div></div></div></section>
+</main><div id="foot"></div><script src="/js/workspace.js"></script></body></html>
